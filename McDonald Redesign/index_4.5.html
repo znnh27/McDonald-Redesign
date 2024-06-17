@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="McDonald_4.5.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<title>McDonald Redesign</title>
+</head>
+
+<body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="McDonald_4.js"></script>
+
+
+<div class="Front">
+    <!-- 更換餐點彈跳視窗 -->
+    <div class="PopUp">
+    <h2>經典大薯</h2>
+    <h3>共可選一份</h3>
+    
+    <div class="chooseitem">
+        <div class="option">
+            <input type="radio" name="option" value="1" id="option1">
+            <img src="../McDonald Redesign/pic/McFluffy.jpeg" alt="">
+            <div class="word">
+                <div class="wordleft">
+                    <p>麥克雞塊(6塊)＋薯條(大)</p>
+                </div>
+                <div class="wordright">
+                    <p>+ $69</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="option">
+            <input type="radio" name="option" value="1" id="option1">
+            <img src="../McDonald Redesign/pic/McFluffy.jpeg" alt="">
+            <div class="word">
+                <div class="wordleft">
+                    <p>麥克雞塊(4塊)＋薯條(大)</p>
+                </div>
+                <div class="wordright">
+                    <p>+ $49</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="option">
+            <input type="radio" name="option" value="1" id="option1">
+            <img src="../McDonald Redesign/pic/McFluffy.jpeg" alt="">
+            <div class="word">
+                <div class="wordleft">
+                    <p>大薯+原味麥脆鷄腿(1塊) </p>
+                    <p class="remark">*棒腿或大腿 部位恕不指定、更換</p>
+                </div>
+                <div class="wordright">
+                    <p>+ $66</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="option">
+            <input type="radio" name="option" value="1" id="option1">
+            <img src="../McDonald Redesign/pic/McFluffy.jpeg" alt="">
+            <div class="word">
+                <div class="wordleft">
+                    <p>大薯+辣味麥脆鷄腿(1塊)</p>
+                    <p class="remark">*棒腿或大腿 部位恕不指定、更換</p>
+                </div>
+                <div class="wordright">
+                    <p>+ $66</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="option">
+            <input type="radio" name="option" value="1" id="option1">
+            <img src="../McDonald Redesign/pic/McFluffy.jpeg" alt="">
+            <div class="word">
+                <div class="wordleft">
+                    <p>原味麥脆鷄腿(1塊)</p>
+                    <p class="remark">*棒腿或大腿 部位恕不指定、更換</p>
+                </div>
+                <div class="wordright">
+                    <p>+ $3</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="option">
+            <input type="radio" name="option" value="1" id="option1">
+            <img src="../McDonald Redesign/pic/McFluffy.jpeg" alt="">
+            <div class="word">
+                <div class="wordleft">
+                    <p>經典中薯</p>
+                </div>
+                <div class="wordright">
+                    <p>- $16</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="PopUpBTN">
+        <a href="index_4.html" class="BTN3">確認點餐</a>
+        <a href="index_4.html" class="BTN4">取消</a>
+    </div>
+    
+    </div>
+    
+    </div>
+
+
+<div class="dark"><a href="index_4.html"></a></div>
+
+
+
+<!-- Header -->
+<div class="Header">
+    <!-- Logo -->
+    <img src="../McDonald Redesign/pic/Top_logo.png" alt="logo_麥當勞歡樂送">
+    <!-- right(Search) -->
+    <ul class="HeaderRight">
+          <!-- 購物車與價格 -->
+        <div class="CartAndPrice">
+            <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+            <li><a href="#">$0</a></li>
+        </div>
+        <!-- 搜尋與會員選單 -->
+         <div class="SearchAndUser">
+            
+            <li><a href="#"><i class="fa-solid fa-user"></i></a>
+            <!-- 會員子選單 -->
+                <ul class="MemberList">
+                    <li><a href="#">追蹤訂單</a></li>
+                    <li><a href="#">訂餐歷史</a></li>
+                    <li><a href="#">我的最愛</a></li>
+                    <li><a href="#">地址資料庫</a></li>
+                    <li><a href="#">信用卡管理</a></li>
+                    <li><a href="#">帳戶設定</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        </div>
+
+     </ul>
+</div>
+
+
+<div class="Wrapper">
+<!-- Navigation -->
+ <!-- 大分類Nav -->
+ <div class="NavUp">
+    <ul>
+        <li class="sel"><a href="">本月熱賣</a></li>
+        <div class="unsel">
+        <li><a href="">麥當勞分享餐</a></li>
+        <li><a href="">超值全餐</a></li>
+        <li><a href="">單點</a></li>
+        <li><a href="">深夜食堂</a></li>
+        <li><a href="">早餐餐點</a></li>
+         </div>
+    </ul>
+</div>
+
+<!-- Main -->
+<!-- 上半部 -->
+ <div class="Main">
+<div class="Upper">
+
+ <!-- 選購的品項 -->
+<div class="card">
+    <ul>
+        <li>
+            <img src="../McDonald Redesign/pic/MainCardPic.jpeg" alt="">
+
+            <div class="content">
+            <!-- 標題 -->
+            <h3>辣味麥克鷄塊 (6塊)</h3>
+
+            <!-- 數量加減 -->
+             <div class="quantity">
+            <form id='myform' method='POST' action='#'>
+                <label for=""></label><input type='button' value='-' class='qtyminus' field='quantity' /><!--
+                --><input type='text' name='quantity' value='0' class='qty' /><!--
+            --><input type='button' value='+' class='qtyplus' field='quantity' />
+            </form>
+            </div>
+
+            <!-- 內容物 -->
+            <p>辣味麥克鷄塊(6塊) x1 <br> 薯條(中) x1 <br>可樂(中) x1</p>
+             <!--線條 -->
+            <hr>
+             <!-- 價錢 -->
+             <div class="price">
+                <h3>餐點小計</h3>
+                <h3>$192</h3>
+            </div>
+            </div>         
+        </li>
+</div>
+<!-- 客製套餐 -->
+<div class="Customized">
+    <div class="title"><h2>客製化套餐</h2></div>
+
+    <!-- 客製化套餐圖卡 -->
+    <div class="CusCard">
+        <div class="CusCard1">
+            <!-- 圖片部份 -->
+            <img src="../McDonald Redesign/pic/McChicken(6).jpeg" alt="" class="McChicken">
+            <!-- 文字部分 -->
+            <div class="word">
+                <h3>主餐</h3>
+                <p>辣味麥克鷄塊(6塊) x1</p>
+            </div>
+        </div>
+        <div class="CusCard2">
+            <div class="CusCard2Left">
+                <!-- 圖片部份 -->
+                <img src="../McDonald Redesign/pic/McFries.png" alt="" class="McChicken">
+                <!-- 文字部分 -->
+                <div class="word">
+                    <h3>配餐</h3>
+                    <p>薯條(中) x1</p>
+                </div>
+            </div>
+            
+                <a href=""><h3>更換</h3><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="CusCard3">
+            <div class="CusCard3Left">
+                <!-- 圖片部份 -->
+                <img src="../McDonald Redesign/pic/McCoke.jpeg" alt="" class="McChicken">
+                <!-- 文字部分 -->
+                <div class="word">
+                    <h3>飲料</h3>
+                    <p>可樂(中) x1</p>
+                </div>
+            </div>
+                <a href=""><h3>更換</h3><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!-- 下半部 -->
+ <!-- 你可能也喜歡 -->
+<div class="YouMightLike">
+    <div class="title"><h2>你可能也喜歡</h2></div>
+
+     <!-- 你可能也喜歡動態Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <!-- 單一 -->
+            <div class="swiper-slide">
+                <img src="../McDonald Redesign/pic/McFluffy.jpeg" alt="">
+                <!-- 置左 -->
+                <div class="left">
+                    <h3>冰炫風-可可布朗尼</h3>
+                </div>
+                <!-- 置右 -->
+                <div class="right">
+                    <p>+$50起</p>
+                    <a href="">訂購</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="../McDonald Redesign/pic/McFluffy.jpeg" alt="">
+                <!-- 置左 -->
+                <div class="left">
+                    <h3>冰炫風-可可布朗尼</h3>
+                </div>
+                <!-- 置右 -->
+                <div class="right">
+                    <p>+$50起</p>
+                    <a href="">訂購</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="../McDonald Redesign/pic/McFluffy.jpeg" alt="">
+                <!-- 置左 -->
+                <div class="left">
+                    <h3>冰炫風-可可布朗尼</h3>
+                </div>
+                <!-- 置右 -->
+                <div class="right">
+                    <p>+$50起</p>
+                    <a href="">訂購</a>
+                </div>
+            </div>
+      
+            <div class="swiper-slide">
+                <img src="../McDonald Redesign/pic/McFluffy.jpeg" alt="">
+                <!-- 置左 -->
+                <div class="left">
+                    <h3>冰炫風-可可布朗尼</h3>
+                </div>
+                <!-- 置右 -->
+                <div class="right">
+                    <p>+$50起</p>
+                    <a href="">訂購</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="../McDonald Redesign/pic/McFluffy.jpeg" alt="">
+                <!-- 置左 -->
+                <div class="left">
+                    <h3>冰炫風-可可布朗尼</h3>
+                </div>
+                <!-- 置右 -->
+                <div class="right">
+                    <p>+$50起</p>
+                    <a href="">訂購</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="../McDonald Redesign/pic/McFluffy.jpeg" alt="">
+                <!-- 置左 -->
+                <div class="left">
+                    <h3>冰炫風-可可布朗尼</h3>
+                </div>
+                <!-- 置右 -->
+                <div class="right">
+                    <p>+$50起</p>
+                    <a href="">訂購</a>
+                </div>
+            </div>
+        </div>
+    <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+    <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
+  </div>
+  </div>
+
+<!-- 選購按鈕 -->
+<div class="DownBTN">
+    <a href="" class="BTN1"><h3>回到菜單</h3></a>
+    <a href="" class="BTN2"><h3>加入餐車</h3></a>
+</div>
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Yellow Part -->
+<div class="links">
+    <div class="words">
+        <a href=""> <i class="fa-solid fa-arrow-pointer"></i>我的帳戶</a>
+        <a href=""> <i class="fa-solid fa-arrow-pointer"></i>使用條款</a>
+        <a href=""> <i class="fa-solid fa-arrow-pointer"></i>隱私權保護聲明</a>
+        <a href=""> <i class="fa-solid fa-arrow-pointer"></i>常見問題</a>
+        <a href=""> <i class="fa-solid fa-arrow-pointer"></i>營養資訊</a>
+        <a href=""> <i class="fa-solid fa-arrow-pointer"></i>政府規範產品標示</a>
+    </div>  
+
+    <div class="socialmedia">
+        <div class="youtube">
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="facebook">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Red Part -->
+<div class="claims">
+    <p>2014麥當勞版權所有 <br>金色拱門標誌和"我就喜歡"是麥當勞公司及其附屬公司的註冊商標。</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 你可能也喜歡&數量加減js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+
+    
+    $(function() {
+    // This button will increment the value
+    $('.qtyplus').click(function(e) {
+
+      // Stop acting like a button
+      e.preventDefault();
+      // Get the field name
+      fieldName = $(this).attr('field');
+      // Get its current value
+      var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+      // If is not undefined
+      if (!isNaN(currentVal)) {
+        // Increment
+        $('input[name=' + fieldName + ']').val(currentVal + 1);
+      } else {
+        // Otherwise put a 0 there
+        $('input[name=' + fieldName + ']').val(0);
+      }
+    });
+    // This button will decrement the value till 0
+    $(".qtyminus").click(function(e) {
+      // Stop acting like a button
+      e.preventDefault();
+      // Get the field name
+      fieldName = $(this).attr('field');
+      // Get its current value
+      var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+      // If it isn't undefined or its greater than 0
+      if (!isNaN(currentVal) && currentVal > 0) {
+        // Decrement one
+        $('input[name=' + fieldName + ']').val(currentVal - 1);
+      } else {
+        // Otherwise put a 0 there
+        $('input[name=' + fieldName + ']').val(0);
+      }
+    });
+  });
+    </script>
+
+
+
+
+
+
+</body>
+
+

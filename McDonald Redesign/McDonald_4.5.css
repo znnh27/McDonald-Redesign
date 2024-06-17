@@ -1,0 +1,828 @@
+@import url(reset.css);
+
+body{
+    background-color: #FAFAFA;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 20px;
+}
+
+p{
+    font-size: 16px;
+}
+
+/* Header */
+.Header{
+    width: 1064px;
+    height: 50px;
+    background-color: #E10C19;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/* Logo */
+.Header img{
+    width: 163px;
+    height: 50px;
+}
+
+/* 右邊所有logo */
+.HeaderRight{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    
+}
+
+/* 右邊所有logo個別 */
+.HeaderRight a{
+    font-size: 20px;
+    color: #EBEBEB;
+    text-decoration: none;
+    /* margin-right: 10px; */
+    
+}
+
+/* 右邊所有logo個別：Hover */
+.HeaderRight a:hover{
+    color: #FFC423;
+}
+
+/* 右邊所有logo選單*/
+.HeaderRight li{
+    float: right;
+    display: block;
+  
+}
+
+/* 右邊購物車跟價錢選單 */
+.HeaderRight .CartAndPrice li{
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    float: left;
+    margin: 5px;
+    flex-direction: row;
+    flex-shrink: 0;
+ }
+
+ /* 右邊購物車跟價錢選單 */
+ .HeaderRight .CartAndPrice{
+    margin-right: 20px;
+    display: flex;
+    height: 40px;
+    width: 85px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC423;
+    border-radius: 8px;
+    padding: 0;
+}
+
+
+ /* 搜尋與會員 */
+ .SearchAndUser a{
+    margin-right: 20px;
+}
+
+
+/* 右邊購物車跟價錢選單 hover */
+.HeaderRight .CartAndPrice:hover{
+    background-color: #fff;
+}
+/* 右邊購物車跟價錢選單 hover後icon變色 */
+.HeaderRight .CartAndPrice:hover a{
+    color: #FF0000;
+}
+
+ /* 會員子選單 */
+ .MemberList{
+    position: absolute;
+    transform: translate(-107px, 0);
+    top: 51px;
+    width: 160px;
+    height: 250px;
+    background-color: #ea0000;
+    display:none;
+ }
+
+/* 會員子選單hover */
+.HeaderRight li:hover .MemberList{
+    display: block;
+ }
+
+/* 會員子選單文字 */
+ .MemberList a{
+    font-size: 16px;
+    line-height: 2.5;
+ }
+ 
+
+
+
+/* Footer */
+/* Footer黃色區 */
+.links{
+    width: 1064px;
+    height: 110px;
+    background-color: #FFC423;
+    margin: auto;
+    text-align: center;
+}
+/* Footer黃色區文字連結 */
+.links .words{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* Footer黃色區文字連結 */
+.links a{
+    color: #393939;
+    font-size: 12px;
+}
+
+.links a:hover{
+    color: #FFFFFF;
+}
+
+/* Footer黃色區社群連結 */
+.socialmedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+/* Footer黃色區社群Logo */
+.links .socialmedia i{
+    font-size: 36px;
+}
+
+
+/* Footer黃色區YT Logo */
+.youtube i{
+    color: #FF0000;
+}
+
+.youtube i:hover{
+    color: #ea0000;
+}
+
+/* Footer黃色區FB Logo */
+.facebook i{
+    color: #1877F2;
+}
+
+.facebook i:hover{
+    color: #1366d1;
+}
+
+/* Footer 紅色區 */
+.claims{
+    display: flex;
+    width: 1064px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background-color: #E10C19;
+    margin: auto;
+}
+/* Footer 紅色區聲明文字 */
+.claims p{
+    color: #EBEBEB;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.Wrapper{
+    width: 1064px;
+    margin: auto;
+    padding: 0;
+}
+
+/* Navigation Up */
+.NavUp{
+    width: 1064px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #EBEBEB;
+    border-radius: 8px;
+}
+
+.NavUp ul{
+    display: flex;
+    width: 800px;
+    font-family: Verdana;
+    line-height: 1;
+    text-align: right;
+    align-items: center;
+}
+
+.NavUp li{
+    margin-right: 3px;
+    box-sizing: border-box;
+}
+
+/* NavUp連結 */
+.NavUp li a{
+    color: #393939;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* NavUp被選中的 */
+.NavUp .sel a{
+    display: block;
+    background-color: #E10C19;
+    color: #FFFFFF;
+    text-align: center;
+    width: 131px;
+    line-height: 1;
+    border-radius: 8px;
+    border: 1px solid #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* NavUp沒被選中的 */
+.NavUp .unsel{
+    display: flex;
+}
+
+/* NavUp Hover */
+.NavUp .sel a:hover{
+    /* color: #FFC423; */
+ } 
+
+ .NavUp .unsel a:hover{
+    color: #E10C19;
+ }
+
+
+
+
+ 
+
+  /* 上半部 */
+.Main{
+    /* outline: 2px solid #E10C19; */
+    /* width: 1064px;
+	margin: 0 auto;
+    display: grid;
+    justify-content: space-between;
+    gap: 30px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'Sel Cus Cus Cus'
+                         'Down Down Down Down'; */
+
+}
+
+
+.Upper{
+    /* outline: 2px solid #1827ff; */
+    width: 1064px;
+	margin: 0 auto;
+    display: grid;
+    justify-content: space-between;
+    gap: 30px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'Sel Cus Cus Cus'
+                         'Down Down Down Down';
+
+}
+
+ /* 上左 card */
+.card{
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    grid-area: Sel;
+ }
+ 
+ /* 上右 客製化 */
+ .Customized{
+    margin:0;
+    margin-top: 20px;
+    grid-area: Cus;
+}
+
+/* 下 你可能也喜歡 */
+.Down{
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    grid-area: Down;
+}
+
+
+/* 下 加入餐車跟取消按鈕 */
+
+
+
+
+
+
+
+
+ /* 圖卡文字 */
+ .card ul{
+     display: flex;
+     
+     flex-wrap: wrap;
+     flex-direction: row;
+ }
+ 
+ .card li{
+     outline: 1px solid #ccc;
+     border-radius: 4px;
+     width: 280px;
+     height: 401px;
+     margin: auto;
+     margin-bottom: 37px;
+     background-color: #F2F2F2;
+     flex-basis: 300px;
+     
+ }
+ 
+ /* 圖卡照片 */
+ .card li img{
+     display: block;
+     width: 100%;
+ }
+ /* 圖卡文字內容置左 */
+ .card .content{
+     margin: 20px;
+ }
+ /* 圖卡標題 */
+ .card .content h3{
+     font-size: 20px;
+     font-weight: bold;
+     margin-bottom: 5px;
+ }
+ /* 圖卡內容物*/
+ .card .content p{
+     font-size: 16px;
+     line-height: 1.2;
+ }
+
+/* 數量加減 */
+.quantity{
+    margin-bottom: 10px;
+}
+
+/* 數量加減 */
+.qty {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+  }
+  
+  
+  input.qtyplus {
+    width: 25px;
+    height: 29px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+    border-radius: 4px;
+  }
+  
+  input.qtyminus {
+    width: 25px;
+    height: 29px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+    border-radius: 4px;
+  }
+
+/* 圖卡價錢 */
+.card .price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+
+
+/* 上右客製圖卡 */
+
+.Customized .title{
+    margin-bottom: 10px;
+}
+
+
+.Customized .CusCard1{
+    display: flex;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 155px;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.Customized .CusCard1 img{
+    width: 17%;
+    height: 75%;
+}
+
+.Customized .CusCard2{
+    display: flex;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 155px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.Customized .CusCard2Left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.CusCard2 a{
+    display: flex;
+    text-decoration: none;
+    color: #E10C19;
+    font-weight: bold;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.Customized .CusCard2 img{
+    width: 17%;
+    height: 75%;
+}
+
+
+.Customized .CusCard3{
+    display: flex;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 155px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.Customized .CusCard3Left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 578.55px;
+}
+
+
+.CusCard3 a{
+    display: flex;
+    text-decoration: none;
+    color: #E10C19;
+    font-weight: bold;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.Customized .CusCard3 img{
+    width: 17%;
+    height: 75%;
+}
+
+
+
+
+/* 你可能也喜歡 標題 */
+.YouMightLike .title{
+    margin-bottom: 10px;
+}
+
+
+/* 你可能也喜歡動態 */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-button-next{
+  background-color: #E10C19;
+  height: 35px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 500px;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.swiper-button-prev{
+    background-color: #E10C19;
+    height: 35px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 500px;
+    margin-right: 10px;
+    color: #ffffff;
+  }
+
+
+
+/* 你可能也喜歡 圖卡 */
+.YouMightLike ul{
+    border: 3px solid red;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;}
+    flex-wrap: nowrap;
+
+
+.YouMightLike li{
+    outline: 1px solid #ccc;
+    border-radius: 4px;
+    width: 24%;
+    /* height: 401px; */
+    /* margin: auto; */
+    /* margin-bottom: 37px; */
+    background-color: #F2F2F2;
+
+    
+}
+
+/* 你可能也喜歡圖卡 hover */
+.YouMightLike li:hover{
+    background-color: #FFC423;
+}
+
+
+/* 你可能也喜歡圖卡照片 */
+.YouMightLike li img{
+    display: block;
+    width: 100%;
+    
+}
+/* 你可能也喜歡圖卡文字內容置左 */
+.YouMightLike .left{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+/* 你可能也喜歡圖卡標題 */
+.YouMightLike .left h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 你可能也喜歡圖卡內容物置右*/
+.YouMightLike .right{
+    text-align: right;
+    margin-right: 15px;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+}
+/* 你可能也喜歡圖卡內容物*/
+.YouMightLike .right p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+/* 你可能也喜歡圖卡訂購按鈕*/
+.YouMightLike .right a{
+    font-size: 20px;
+    font-weight: bold;
+    width: 90px;
+    /* height: 54px; */
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #E10C19;
+    border-radius: 8px;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    text-align: center;
+    color: #EBEBEB;
+}
+
+/* 你可能也喜歡圖卡訂購按鈕 Hover*/
+.YouMightLike .right a:hover{
+    color: #E10C19;
+    background-color: #ffffff;
+    outline: 3px solid #E10C19;
+}
+
+.YouMightLike a{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+
+
+
+/* 回到菜單＆加入餐車按鈕 */
+.DownBTN{
+	margin: 50px auto;
+    margin-bottom: 100px;
+    display: grid;
+    justify-content: space-between;
+    gap: 30px;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'BTN1 BTN2';
+}
+
+.DownBTN a{
+    text-decoration: none;
+    line-height: 2;
+    text-align: center;
+}
+
+.DownBTN .BTN1{
+    outline: 1px solid #666666;
+    color: #666666;
+    border-radius: 8px;
+    grid-area: BTN1;
+}
+
+.DownBTN .BTN2{
+    background-color: #E10C19;
+    color: #EBEBEB;
+    border-radius: 8px;
+    grid-area: BTN2;
+}
+
+
+
+/* 更換餐點彈跳視窗 */
+.Front{
+    width: 100%;
+    height: 200%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 3;
+    
+}
+
+/* 背景色黑 */
+.dark{
+    background-color: #00000080;
+    opacity: .99;
+    position: relative;
+    width: 100%;
+    height: 200%;
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+
+
+
+/* 彈跳視窗內容 */
+.PopUp{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid #000; */
+    background-color: #FAFAFA;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.PopUp h2{
+    margin-bottom: 10px;
+}
+
+.PopUp h3{
+    margin-bottom: 25px;
+}
+
+
+.chooseitem{
+    display: block;
+
+}
+
+/* 彈跳視窗radio button */
+.chooseitem input{
+    margin-left: 35px;
+}
+
+/* 彈跳視窗單一選項方塊*/
+.option{
+    /* border: 1px solid #ff3535; */
+    display: flex;
+    width: 98%;
+    height: 135px;
+    align-items: center;
+    margin: 0 auto;
+    gap: 5%;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+/* 彈跳視窗單一選項方塊內圖片*/
+.option img{
+    display: block;
+    width: 15%;
+    height: 60%;
+}
+
+/* 彈跳視窗單一選項方塊內文字*/
+.chooseitem .option .word{
+    display: flex;
+    width: 58%;
+    justify-content: space-between;
+}
+
+/* 彈跳視窗單一選項方塊內文字小標*/
+.chooseitem .option .word .remark{
+    font-size: 10px;
+    color: #666666;
+    margin-top: 5px;
+}
+
+/* 彈跳視窗按鈕*/
+.PopUpBTN{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* 彈跳視窗按鈕-確定餐點*/
+.PopUp .BTN3{
+    text-decoration: none;
+    font-size: 20px;
+    color: #EBEBEB;
+    background-color: #E10C19;
+    text-align: center;
+    width: 98%;
+    border-radius: 8px;
+    line-height: 1.8;
+    margin-bottom: 5px;
+    
+}
+
+/* 彈跳視窗按鈕-取消*/
+.PopUp .BTN4{
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid #666666;
+    color: #666666;
+    text-align: center;
+    width: 98%;
+    border-radius: 8px;
+    line-height: 1.8;
+}
+
+

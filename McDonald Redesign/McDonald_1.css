@@ -1,0 +1,495 @@
+@import url(reset.css);
+
+body{
+    background-color: #FAFAFA;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 20px;
+}
+
+p{
+    font-size: 16px;
+}
+
+/* Header */
+.Header{
+    width: 1064px;
+    height: 50px;
+    background-color: #E10C19;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/* Logo */
+.Header img{
+    width: 163px;
+    height: 50px;
+}
+
+/* 右邊所有logo */
+.HeaderRight{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    
+}
+
+/* 右邊所有logo個別 */
+.HeaderRight a{
+    font-size: 20px;
+    color: #EBEBEB;
+    text-decoration: none;
+    /* margin-right: 10px; */
+    
+}
+
+/* 右邊所有logo個別：Hover */
+.HeaderRight a:hover{
+    color: #FFC423;
+}
+
+/* 右邊所有logo選單*/
+.HeaderRight li{
+    float: right;
+    display: block;
+  
+}
+
+/* 右邊購物車跟價錢選單 */
+.HeaderRight .CartAndPrice li{
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    float: left;
+    margin: 5px;
+    flex-direction: row;
+    flex-shrink: 0;
+ }
+
+ /* 右邊購物車跟價錢選單 */
+ .HeaderRight .CartAndPrice{
+    margin-right: 20px;
+    display: flex;
+    height: 40px;
+    width: 85px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC423;
+    border-radius: 8px;
+    padding: 0;
+}
+
+
+ /* 搜尋與會員 */
+ .SearchAndUser a{
+    margin-right: 20px;
+}
+
+
+/* 右邊購物車跟價錢選單 hover */
+.HeaderRight .CartAndPrice:hover{
+    background-color: #fff;
+}
+/* 右邊購物車跟價錢選單 hover後icon變色 */
+.HeaderRight .CartAndPrice:hover a{
+    color: #FF0000;
+}
+
+ /* 會員子選單 */
+ .MemberList{
+    position: absolute;
+    transform: translate(-107px, 0);
+    top: 51px;
+    width: 160px;
+    height: 250px;
+    background-color: #ea0000;
+    display:none;
+ }
+
+/* 會員子選單hover */
+.HeaderRight li:hover .MemberList{
+    display: block;
+ }
+
+/* 會員子選單文字 */
+ .MemberList a{
+    font-size: 16px;
+    line-height: 2.5;
+ }
+
+
+
+/* Footer */
+/* Footer黃色區 */
+.links{
+    width: 1064px;
+    height: 110px;
+    background-color: #FFC423;
+    margin: auto;
+    text-align: center;
+}
+/* Footer黃色區文字連結 */
+.links .words{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* Footer黃色區文字連結 */
+.links a{
+    color: #393939;
+    font-size: 12px;
+}
+
+.links a:hover{
+    color: #FFFFFF;
+}
+
+/* Footer黃色區社群連結 */
+.socialmedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+/* Footer黃色區社群Logo */
+.links .socialmedia i{
+    font-size: 36px;
+}
+
+
+/* Footer黃色區YT Logo */
+.youtube i{
+    color: #FF0000;
+}
+
+.youtube i:hover{
+    color: #ea0000;
+}
+
+/* Footer黃色區FB Logo */
+.facebook i{
+    color: #1877F2;
+}
+
+.facebook i:hover{
+    color: #1366d1;
+}
+
+/* Footer 紅色區 */
+.claims{
+    display: flex;
+    width: 1064px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background-color: #E10C19;
+    margin: auto;
+}
+/* Footer 紅色區聲明文字 */
+.claims p{
+    color: #EBEBEB;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.Wrapper{
+    width: 1064px;
+    margin: auto;
+    padding: 0;
+}
+
+
+/* Navigation */
+/* Navigation Up */
+.NavUp{
+    width: 1064px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #EBEBEB;
+    border-radius: 8px;
+}
+
+.NavUp ul{
+    display: flex;
+    width: 800px;
+    font-family: Verdana;
+    line-height: 1;
+    text-align: right;
+    align-items: center;
+}
+
+.NavUp li{
+    margin-right: 3px;
+    box-sizing: border-box;
+}
+
+/* NavUp連結 */
+.NavUp li a{
+    color: #393939;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* NavUp被選中的 */
+.NavUp .sel a{
+    display: block;
+    background-color: #E10C19;
+    color: #FFFFFF;
+    text-align: center;
+    width: 131px;
+    line-height: 1;
+    border-radius: 8px;
+    border: 1px solid #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* NavUp沒被選中的 */
+.NavUp .unsel{
+    display: flex;
+}
+
+/* NavUp Hover */
+.NavUp .sel a:hover{
+    /* color: #FFC423; */
+ } 
+
+ .NavUp .unsel a:hover{
+    color: #E10C19;
+ }
+
+ /* Navigation Down*/
+ .NavDown{
+    width: 1064px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: #FFC423;
+    border-radius: 10px;
+}
+
+.NavDown ul{
+    display: flex;
+    width: 800px;
+    font-family: Verdana;
+    line-height: 1;
+    text-align: right;
+    align-items: center;
+}
+
+.NavDown li{
+    margin-right: 3px;
+    box-sizing: border-box;
+}
+
+.NavDown li a{
+    display: block;
+    color: #393939;
+    text-align: center;
+    line-height: 1;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+/* NavDown被選中的 */
+.NavDown .sel a{
+    display: block;
+    background-color: #E10C19;
+    color: #FFFFFF;
+    text-align: center;
+    width: 131px;
+    line-height: 1;
+    border-radius: 8px;
+    /* border: 1px solid #FFFFFF; */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* NavDown沒被選中的 */
+.NavDown .unsel{
+    display: flex;
+}
+
+/* NavDown Hover */
+.NavDown .sel a:hover{
+    /* color: #FFC423; */
+ } 
+
+ .NavDown .unsel a:hover{
+    color: #FFFFFF;
+    background-color: #E10C19;
+    border-radius: 8px;
+    /* border: 1px solid #FFFFFF; */
+ }
+
+ /* 廣告圖 */
+ .ad img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    object-position: center center;
+    width: 1064px;
+    height: 500px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+ }
+
+
+
+
+/* Main */
+/* 上半部 */
+.Upper{
+    display: flex;
+}
+
+.Main{
+    /* margin: 30px 75px; */
+    margin: 0 auto;
+    max-width: 1064px;
+}
+/* Title */
+.title h2{
+    margin: 10px auto;
+    margin-bottom: 20px;
+    align-items: start;
+}
+
+
+/* card */
+.card{
+   margin: 0 auto;
+   padding: 0;
+
+}
+
+
+/* 圖卡文字 */
+.card ul{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* display: flex; */
+    margin: 0 auto;
+    /* padding: 30px 30px; */
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* gap: 20px 1.3333333%; */
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 40px 20px;
+}
+
+.card li{
+    outline: 1px solid #ccc;
+    border-radius: 4px;
+    /* width: 24%; */
+    /* height: 401px; */
+    /* margin: auto; */
+    /* margin-bottom: 37px; */
+    background-color: #F2F2F2;
+
+    
+}
+
+/* 圖卡 hover */
+.card li:hover{
+    background-color: #FFC423;
+}
+
+
+/* 圖卡照片 */
+.card li img{
+    display: block;
+    width: 100%;
+}
+/* 圖卡文字內容置左 */
+.card .left{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+/* 圖卡標題 */
+.card .left h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* 圖卡內容物*/
+.card .left p{
+    font-size: 16px;
+}
+/* 圖卡內容物置右*/
+.card .right{
+    text-align: right;
+    margin-right: 15px;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+}
+/* 圖卡內容物*/
+.card .right p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+/* 圖卡訂購按鈕*/
+.card .right a{
+    font-size: 20px;
+    font-weight: bold;
+    width: 90px;
+    /* height: 54px; */
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #E10C19;
+    border-radius: 8px;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    text-align: center;
+    color: #EBEBEB;
+}
+
+/* 圖卡訂購按鈕 Hover*/
+.card .right a:hover{
+    color: #E10C19;
+    background-color: #ffffff;
+    outline: 3px solid #E10C19;
+}
+
+
+
+/* 跳下一頁 */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e65c00;
+}
+
