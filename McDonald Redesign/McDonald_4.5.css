@@ -709,7 +709,7 @@ p{
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     
 }
 
@@ -722,7 +722,7 @@ p{
     height: 200%;
     display: block;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
 }
 
 

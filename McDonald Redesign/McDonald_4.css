@@ -17,6 +17,7 @@ p{
     font-size: 16px;
 }
 
+
 /* Header */
 .Header{
     width: 1064px;
@@ -28,6 +29,11 @@ p{
     margin: auto;
 }
 
+.mescr744{
+    display: none;
+}
+
+
 /* Logo */
 .Header img{
     width: 163px;
@@ -35,6 +41,10 @@ p{
 }
 
 /* 右邊所有logo */
+.HeaderRight > .fa{
+	display: none;
+}
+
 .HeaderRight{
     display: flex;
     flex-direction: row;
@@ -126,7 +136,8 @@ p{
     font-size: 16px;
     line-height: 2.5;
  }
- 
+
+
 
 
 
@@ -697,3 +708,167 @@ hr{
 
 
 
+/* ----- 斷點 744 ----- */
+@media screen and (max-width: 744px) {
+    .Header{
+        display: flex;
+       
+    }
+    .dark{
+        background-color: #00000080;
+        opacity: .99;
+        width: 100%;
+        height: 200%;
+        display: block;
+       
+    }
+    
+    
+    .mescr744 > .fa{
+        display: block;
+        color: #EBEBEB;
+        margin-right: 10px;
+    }
+    
+    .card ul{
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-rows: auto;
+        gap: 40px 20px;
+        
+    }
+    
+    .HeaderRight .SearchAndUser{
+        display: none;
+    } 
+    
+    .mescr744{
+        display: flex;
+        
+    }
+    
+    .mescr744 ul{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        width: 50%;
+        height: 180%;
+        /* transform: translate(173px, 0); */
+        position: absolute;
+        transform: translate(-367px, 0);
+        top: 51px;
+        background-color: #ea0000;
+        padding-top: 30px;
+        min-width: 400px;
+        z-index: 3;
+        display: none;
+    }
+    
+    
+    .mescr744 > .fa:hover .mescr744 > ul{
+        display: flex;
+    }
+    
+    
+    
+    .mescr744 ul li a{
+      font-size: 28px;
+      line-height: 2;
+      text-align: right;
+    }
+    
+    .mescr744 ul li{
+       margin-right: 50px;
+       margin-left: 60px;
+    
+    }
+    
+    
+    .mescr744 ol{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 30px;
+        /* display: none;  */
+    }
+    
+    .mescr744 .mescr:hover .mescr744 ol li a{
+        display: flex;
+    }
+    
+    
+    .mescr744 ol li a{
+        font-size: 24px;
+        color: #FFC423;
+    }
+    
+    
+    
+    .NavDown{
+        display: none;
+    }
+    
+    
+
+
+    .swiper{
+        z-index: 1;
+    }
+
+    .YouMightLike{
+        margin: 0 91px;
+    }
+
+    .Upper{
+        display: flex;
+        flex-direction: column;
+        margin: 0 8.8%;
+        
+    }
+
+
+    .Customized{
+        width: 83%;
+    }
+
+    
+    .card ul {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-rows: auto;
+        gap: 40px 20px;
+    }
+
+    .card li{
+        margin: 10px 0;
+       width: 83%;
+       height: 101%;
+    }
+
+    .DownBTN{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        width: 83%;
+        gap: 10px;
+    }
+
+    .DownBTN a{
+        line-height: 3;
+    }
+
+}
+    /* ----- 斷點 430 ----- */
+    @media screen and (max-width: 360px){
+        .Header .fa{
+           
+        }
+        
+        }

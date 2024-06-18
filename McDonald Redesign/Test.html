@@ -1,100 +1,31 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="McDonald_3.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<title>McDonald Redesign</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="Test.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>McDonald Redesign</title>
 </head>
 
 <body>
-    <script src="script.js"></script>
-
-
-<div class="Front">
-
-    <div class="FrontUp">
-        <div class="FrontUpLeft"><a href=""><h2>依縣市尋找</h2></a></div>
-        <div class="FrontUpRight"><a href=""><h2>依定位尋找</h2></a></div>
-    </div>
-
-    <div class="FrontDown">
-                <h2>外送地址</h2>
-                <div class="address-selection">
-                    <label for="city">台北市</label>
-                    <select id="city">
-                        <option value="taipei">台北市</option>
-                        <!-- 添加更多城市選項 -->
-                    </select>
-                    <label for="district">松山區</label>
-                    <select id="district">
-                        <option value="songshan">松山區</option>
-                        <!-- 添加更多區域選項 -->
-                    </select>
-                    <input type="text" id="address" placeholder="八德路四段100號5樓">
-                </div>
-                <h3>送達日期</h3>
-                <div class="date-selection">
-                    <button class="date-option">今天<br>5月23日</button>
-                    <button class="date-option">明天<br>5月24日</button>
-                    <button class="date-option">週六<br>5月25日</button>
-                    <button class="date-option">週日<br>5月26日</button>
-                    <button class="date-option">週一<br>5月27日</button>
-                    <button class="date-option">週二<br>5月28日</button>
-                    <button class="date-option">週三<br>5月29日</button>
-                </div>
-                <h3>送達時間</h3>
-                <div class="time-selection">
-                    <select id="hour">
-                        <!-- 小時選項 -->
-                        <option value="--">--</option>
-                        <option value="00">00</option>
-                        <option value="01">01</option>
-                        <!-- 添加更多小時選項 -->
-                    </select>
-                    :
-                    <select id="minute">
-                        <!-- 分鐘選項 -->
-                        <option value="--">--</option>
-                        <option value="00">00</option>
-                        <option value="15">15</option>
-                        <option value="30">30</option>
-                        <option value="45">45</option>
-                    </select>
-                </div>
-                <button class="btn confirm-btn">前往訂餐</button>
-        </div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="dark"></div>
-
-
-<!-- Header -->
+   <!-- Header -->
 <div class="Header">
     <!-- Logo -->
     <img src="../McDonald Redesign/pic/Top_logo.png" alt="logo_麥當勞歡樂送">
     <!-- right(Search) -->
+    <i class="fa fa-bars" aria-hidden="true"></i>
     <ul class="HeaderRight">
-          <!-- 購物車與價格 -->
+        <!-- 購物車與價格 -->
         <div class="CartAndPrice">
             <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
             <li><a href="#">$0</a></li>
         </div>
         <!-- 搜尋與會員選單 -->
-         <div class="SearchAndUser">
-            
+        <div class="SearchAndUser">
             <li><a href="#"><i class="fa-solid fa-user"></i></a>
-            <!-- 會員子選單 -->
+                <!-- 會員子選單 -->
                 <ul class="MemberList">
                     <li><a href="#">追蹤訂單</a></li>
                     <li><a href="#">訂餐歷史</a></li>
@@ -106,200 +37,9 @@
             </li>
             <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
         </div>
-
-     </ul>
-</div>
-
-<div class="Wrapper">
-<!-- Navigation -->
- <!-- 大分類Nav -->
-<div class="NavUp">
-    <ul>
-        <li class="sel"><a href="">本月熱賣</a></li>
-        <div class="unsel">
-        <li><a href="">麥當勞分享餐</a></li>
-        <li><a href="">超值全餐</a></li>
-        <li><a href="">單點</a></li>
-        <li><a href="">深夜食堂</a></li>
-        <li><a href="">早餐餐點</a></li>
-         </div>
     </ul>
-</div>
-<!-- 小分類Nav -->
- <div class="NavDown">
-    <ul>
-        <li class="sel"><a href="">辣味麥克鷄塊</a></li>
-        <div class="unsel">
-        <li><a href="">辣味鷄塊鷄腿</a></li>
-        <li><a href="">冰炫風</a></li>
-        <li><a href="">雙層麥香魚</a></li>
-        <li><a href="">麥當勞購物袋</a></li>
-         </div>
-    </ul>
- </div>
-
-<!-- Ad Pic -->
-<div class="ad">
-    <img src="../McDonald Redesign/pic/ad.jpeg" alt="">
-</div>
-
-<!-- Main -->
- <div class="Main">
- <div class="title"><h2>本月熱賣</h2></div>
-
- <div class="card">
-    <ul>
-        <li>
-            <img src="../McDonald Redesign/pic/MainCardPic.jpeg" alt="">
-            <!-- 置左 -->
-            <div class="left">
-            <h3>辣味麥克鷄塊 (6塊)</h3>
-            <p>辣味麥克鷄塊(6塊) x1 <br> 薯條(中) x1 <br>可樂(中) x1</p>
-            </div>
-            <!-- 置右 -->
-            <div class="right">
-            <p>$150起</p>
-            <a href="">訂購</a>
-            </div>
-        </li>
-        <li>
-            <img src="../McDonald Redesign/pic/MainCardPic.jpeg" alt="">
-            <!-- 置左 -->
-            <div class="left">
-            <h3>辣味麥克鷄塊 (6塊)</h3>
-            <p>辣味麥克鷄塊(6塊) x1 <br> 薯條(中) x1 <br>可樂(中) x1</p>
-            </div>
-            <!-- 置右 -->
-            <div class="right">
-            <p>$150起</p>
-            <a href="">訂購</a>
-            </div>
-        </li>
-        <li>
-            <img src="../McDonald Redesign/pic/MainCardPic.jpeg" alt="">
-            <!-- 置左 -->
-            <div class="left">
-            <h3>辣味麥克鷄塊 (6塊)</h3>
-            <p>辣味麥克鷄塊(6塊) x1 <br> 薯條(中) x1 <br>可樂(中) x1</p>
-            </div>
-            <!-- 置右 -->
-            <div class="right">
-            <p>$150起</p>
-            <a href="">訂購</a>
-            </div>
-        </li>
-        <li>
-            <img src="../McDonald Redesign/pic/MainCardPic.jpeg" alt="">
-            <!-- 置左 -->
-            <div class="left">
-            <h3>辣味麥克鷄塊 (6塊)</h3>
-            <p>辣味麥克鷄塊(6塊) x1 <br> 薯條(中) x1 <br>可樂(中) x1</p>
-            </div>
-            <!-- 置右 -->
-            <div class="right">
-            <p>$150起</p>
-            <a href="">訂購</a>
-            </div>
-        </li>
-        <li>
-            <img src="../McDonald Redesign/pic/MainCardPic.jpeg" alt="">
-            <!-- 置左 -->
-            <div class="left">
-            <h3>辣味麥克鷄塊 (6塊)</h3>
-            <p>辣味麥克鷄塊(6塊) x1 <br> 薯條(中) x1 <br>可樂(中) x1</p>
-            </div>
-            <!-- 置右 -->
-            <div class="right">
-            <p>$150起</p>
-            <a href="">訂購</a>
-            </div>
-        </li>
-        <li>
-            <img src="../McDonald Redesign/pic/MainCardPic.jpeg" alt="">
-            <!-- 置左 -->
-            <div class="left">
-            <h3>辣味麥克鷄塊 (6塊)</h3>
-            <p>辣味麥克鷄塊(6塊) x1 <br> 薯條(中) x1 <br>可樂(中) x1</p>
-            </div>
-            <!-- 置右 -->
-            <div class="right">
-            <p>$150起</p>
-            <a href="">訂購</a>
-            </div>
-        </li>
-        <li>
-            <img src="../McDonald Redesign/pic/MainCardPic.jpeg" alt="">
-            <!-- 置左 -->
-            <div class="left">
-            <h3>辣味麥克鷄塊 (6塊)</h3>
-            <p>辣味麥克鷄塊(6塊) x1 <br> 薯條(中) x1 <br>可樂(中) x1</p>
-            </div>
-            <!-- 置右 -->
-            <div class="right">
-            <p>$150起</p>
-            <a href="">訂購</a>
-            </div>
-        </li>
-    </ul>
-
- </div>
-</div>
-
-</div>
-
-
-<!-- Footer -->
-<!-- Yellow Part -->
-<div class="links">
-    <div class="words">
-        <a href=""> <i class="fa-solid fa-arrow-pointer"></i>我的帳戶</a>
-        <a href=""> <i class="fa-solid fa-arrow-pointer"></i>使用條款</a>
-        <a href=""> <i class="fa-solid fa-arrow-pointer"></i>隱私權保護聲明</a>
-        <a href=""> <i class="fa-solid fa-arrow-pointer"></i>常見問題</a>
-        <a href=""> <i class="fa-solid fa-arrow-pointer"></i>營養資訊</a>
-        <a href=""> <i class="fa-solid fa-arrow-pointer"></i>政府規範產品標示</a>
-    </div>  
-
-    <div class="socialmedia">
-        <div class="youtube">
-        <a href=""><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div class="facebook">
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        </div>
-    </div>
-</div>
-
-<!-- Red Part -->
-<div class="claims">
-    <p>2014麥當勞版權所有 <br>金色拱門標誌和"我就喜歡"是麥當勞公司及其附屬公司的註冊商標。</p>
-
-
 </div>
 
 </body>
 
-
-
-<script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-    var modal = document.getElementById("myModal");
-    var btn = document.getElementById("openModalBtn");
-    var span = document.getElementsByClassName("close")[0];
-
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-});
-
-</script>
+</html>
