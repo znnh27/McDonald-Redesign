@@ -26,6 +26,9 @@ p{
     align-items: center;
     justify-content: space-between;
     margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .mescr744{
@@ -228,7 +231,7 @@ p{
 .NavUp{
     width: 1064px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 60px;
     background-color: #EBEBEB;
     border-radius: 8px;
 }
@@ -772,7 +775,10 @@ p{
     }
     
     .dark{
-        width: 200%;
+        
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
 
 

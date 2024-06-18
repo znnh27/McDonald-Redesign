@@ -27,6 +27,9 @@ p{
     align-items: center;
     justify-content: space-between;
     margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .mescr744{
@@ -229,7 +232,7 @@ p{
 .NavUp{
     width: 1064px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 60px;
     background-color: #EBEBEB;
     border-radius: 8px;
 }
@@ -460,8 +463,10 @@ hr{
 }
 
 .Customized .CusCard1 img{
-    width: 17%;
-    height: 75%;
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
 }
 
 .Customized .CusCard2{
@@ -492,8 +497,10 @@ hr{
 }
 
 .Customized .CusCard2 img{
-    width: 17%;
-    height: 75%;
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
 }
 
 
@@ -526,8 +533,10 @@ hr{
 }
 
 .Customized .CusCard3 img{
-    width: 17%;
-    height: 75%;
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
 }
 
 
@@ -582,6 +591,18 @@ hr{
     border-radius: 800px;
     margin-right: 10px;
     color: #ffffff;
+}
+
+swiper-button-next{
+    top: var(--swiper-navigation-top-offset, 50%);
+    width: calc(var(--swiper-navigation-size) / 44* 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px -(var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {

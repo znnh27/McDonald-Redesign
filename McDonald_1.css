@@ -26,6 +26,11 @@ p{
     align-items: center;
     justify-content: space-between;
     margin: auto;
+   
+    position: fixed;
+    top: 0;
+    width: 100%;
+     
 }
 
 .mescr744{
@@ -228,9 +233,10 @@ p{
 .NavUp{
     width: 100%;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 60px;
     background-color: #EBEBEB;
     border-radius: 8px;
+   
 }
 
 .NavUp ul{
@@ -291,7 +297,7 @@ p{
     margin-bottom: 10px;
     background-color: #FFC423;
     border-radius: 10px;
-}
+ }
 
 .NavDown ul{
     display: flex;
