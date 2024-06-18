@@ -233,6 +233,7 @@ p{
     width: 1064px;
     margin: auto;
     margin-top: 60px;
+    margin-bottom: 10px;
     background-color: #EBEBEB;
     border-radius: 8px;
 }
@@ -593,18 +594,19 @@ hr{
     color: #ffffff;
 }
 
-swiper-button-next{
-    top: var(--swiper-navigation-top-offset, 50%);
-    width: calc(var(--swiper-navigation-size) / 44* 27);
-    height: var(--swiper-navigation-size);
-    margin-top: calc(0px -(var(--swiper-navigation-size) / 2));
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
+.swiper-outer{
     align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
+.swiper-outer .swiper-button-next.next-button{
+    right: -40px;
+}
+
+
+.swiper-outer .swiper-button-prev.prev-button{
+    left:-40px;
+}
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     content: 'next';
     display: none;

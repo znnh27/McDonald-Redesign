@@ -768,7 +768,9 @@ p{
         color: #FFC423;
     }
     
-    
+    .NavUp{
+        margin-bottom: 10px;
+    }
     
     .NavDown{
         display: none;
