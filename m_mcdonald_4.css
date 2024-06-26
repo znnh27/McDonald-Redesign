@@ -30,6 +30,7 @@ p{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
 }
 
 .mescr744{
@@ -597,6 +598,7 @@ hr{
 .swiper-outer{
     align-items: center;
     position: relative;
+    z-index: 1;
 }
 
 .swiper-outer .swiper-button-next.next-button{
@@ -617,6 +619,9 @@ hr{
     width: 37px;
     text-align: center;
 }
+
+
+
 
 
 /* 往左滑動按鍵 */
