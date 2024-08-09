@@ -182,6 +182,7 @@ p{
 /* Footer黃色區YT Logo */
 .youtube i{
     color: #FF0000;
+    margin-right: 15px;
 }
 
 .youtube i:hover{
